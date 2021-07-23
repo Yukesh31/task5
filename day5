@@ -96,6 +96,86 @@ console.log(array2[(len2+1)/2]);
  Remove duplicates from an array
  /////
  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 3) Do the below programs in arrow functions
+        Print odd numbers in an array 
+        /////
+      let numberArray = [1, 2, 3, 4, 5, 6, 98, 101, 467]
+
+console.log(numberArray.filter((item) => {
+
+    return item % 2 !== 0
+}));
+
+
+  }))
+
+  
+  //////
+  
+  Convert all the strings to title caps in a string array
+  ////
+  
+let stringArray =["my","name","is","yukesh"];
+
+stringArray = stringArray.map((item) => {
+
+    return item.toUpperCase()
+
+})
+
+console.log( stringArray);
+
+/////
+
+Sum of all numbers in an array
+/////
+let sum = Array.reduce((Total, item) => {
+
+    return Total + item
+
+})
+
+console.log(sum);
+/////
+
+ Return all the prime numbers in an array
+ /////
+ let array = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+console.log( array.filter((item)=>
+
+  {
+return  (item%3!=0 && item %2 !== 0) || (item ==2) || (item==3) ;
+  }));
+
+
+
+////
+
+Return all the palindromes in an array
+//////
+
+ let a=[235,545];
+
+console.log( a.filter((item)=>{
+    let temp=item+"";
+    if(temp.split("").reverse().join("")==item+"")
+    return true;
+  
+    
+  }))
+
+
+
 
 
 
