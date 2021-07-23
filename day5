@@ -1,0 +1,101 @@
+ 1) Do the below programs in anonymous function & IIFE
+ Print odd numbers in an array 
+ ////
+let array = [1,2,3,4,5,6,7,8,9];
+let result = (function (array) {
+return (array.filter((odd) => {
+return odd % 2 !== 0
+}))
+})(array);
+console.log( result);
+////
+
+Convert all the strings to title caps in a string array
+/////
+let stringArray = ["my","name","is","yukesh"];
+let result = (function (stringArray) {
+  return (stringArray.map((item)=>
+  {
+return item.toUpperCase() 
+ 
+}))
+})
+(stringArray);
+
+console.log( result);
+////
+
+Sum of all numbers in an array
+//////
+
+let Array = [1,2,3,4,5,6,7,8,9];
+let result = (function (Array) {
+  return (Array.reduce((total,item)=>
+  {
+return  total+item;
+ 
+}))
+})
+(Array);
+
+console.log( result);
+/////
+
+
+Return all the prime numbers in an array
+/////
+let Array = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+let result = (function (Array) {
+  return (Array.filter((item)=>
+  {
+return  (item%3!=0 && item %2 !== 0) || (item ==2) || (item==3) ;
+ 
+}))
+})
+(Array);
+
+console.log( result);
+/////
+
+ Return all the palindromes in an array
+ ///
+ let array = [235,545];
+let resultPallindromeArray = (function (array) {
+   return (array.filter((item) => {
+     let temp=item+"";
+
+if ((temp.split('').reverse().join('')) === item+"" )
+return true;
+return false;
+}))
+})(array);
+
+console.log( resultPallindromeArray)
+////
+
+Return median of two sorted arrays of same size 
+/////
+let array1 = [1,2,3,4,5,6,7];
+let array2=[1,2,3,4,5,6];
+let result=(function(array1,array2){
+   let len1=array1.length;
+   let len2=array2.length;
+   console.log(len1,len2);
+     if(len1%2===0)
+console.log(array1[len1/2]);
+else
+console.log(array1[(len1+1)/2]);
+if(len2%2===0)
+console.log(array2[len2/2]);
+else
+console.log(array2[(len2+1)/2]);
+
+})(array1,array2);
+/////
+
+ Remove duplicates from an array
+ /////
+ 
+
+
+
