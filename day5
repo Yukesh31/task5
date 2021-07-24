@@ -96,6 +96,28 @@ console.log(array2[(len2+1)/2]);
  Remove duplicates from an array
  /////
  
+let chars = [1,2,3,4,1,1,1,1,4,5]; 
+let uniqueChars = [...new Set(chars)]; 
+console.log(uniqueChars);
+//////
+
+
+Rotate an array by k times
+//////
+let arr= [0, 1, 5, 6, 7, 9]
+let result = ((array, k) => {
+
+    for (let i = 0; i < k; i++) {
+        let temp = array.shift()
+        array.push(temp)
+    }
+    return array
+
+})(arr, 3)
+
+console.log(result);
+////////////////////
+ 
  
  
  
